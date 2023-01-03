@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A41B474-A52A-4E5E-AA5B-F3A2EAE351A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_6395</RootNamespace>
+    <AssemblyName>Project_6395</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DLL_1">
+      <HintPath>..\..\DLL_1\DLL_1\bin\Debug\DLL_1.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.0.31\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2515\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2515\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2515\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conclusion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conclusion.Designer.cs">
+      <DependentUpon>conclusion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocum.Designer.cs">
+      <DependentUpon>FormDocum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReg.Designer.cs">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_test_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_test_1.Designer.cs">
+      <DependentUpon>Form_test_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information.Designer.cs">
+      <DependentUpon>information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing_questions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\output_components.cs" />
+    <Compile Include="question_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_1.Designer.cs">
+      <DependentUpon>question_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_10.Designer.cs">
+      <DependentUpon>question_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_11.Designer.cs">
+      <DependentUpon>question_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_12.Designer.cs">
+      <DependentUpon>question_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_13.Designer.cs">
+      <DependentUpon>question_13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_14.Designer.cs">
+      <DependentUpon>question_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_15.Designer.cs">
+      <DependentUpon>question_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_16.Designer.cs">
+      <DependentUpon>question_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_2.Designer.cs">
+      <DependentUpon>question_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_3.Designer.cs">
+      <DependentUpon>question_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_4.Designer.cs">
+      <DependentUpon>question_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_5.Designer.cs">
+      <DependentUpon>question_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_6.Designer.cs">
+      <DependentUpon>question_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_7.Designer.cs">
+      <DependentUpon>question_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_8.Designer.cs">
+      <DependentUpon>question_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="question_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question_9.Designer.cs">
+      <DependentUpon>question_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="conclusion.resx">
+      <DependentUpon>conclusion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocum.resx">
+      <DependentUpon>FormDocum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReg.resx">
+      <DependentUpon>FormReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_test_1.resx">
+      <DependentUpon>Form_test_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information.resx">
+      <DependentUpon>information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="question_1.resx">
+      <DependentUpon>question_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_10.resx">
+      <DependentUpon>question_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_11.resx">
+      <DependentUpon>question_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_12.resx">
+      <DependentUpon>question_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_13.resx">
+      <DependentUpon>question_13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_14.resx">
+      <DependentUpon>question_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_15.resx">
+      <DependentUpon>question_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_16.resx">
+      <DependentUpon>question_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_2.resx">
+      <DependentUpon>question_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_3.resx">
+      <DependentUpon>question_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_4.resx">
+      <DependentUpon>question_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_5.resx">
+      <DependentUpon>question_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_6.resx">
+      <DependentUpon>question_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_7.resx">
+      <DependentUpon>question_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_8.resx">
+      <DependentUpon>question_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question_9.resx">
+      <DependentUpon>question_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-world-book-day-4277071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-828370 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-3330314 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-avatar-7610196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-database-4315337.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-avatar-76101961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-3330314 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-3330314.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-828370 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-828370.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-world-book-day-42770711.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-database-43153371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-covid-test-4145296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-gear-8098776.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-covid-test-41452961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-database-43153372.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-avatar-76101962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-3330314 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-33303141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-828370 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-book-8283701.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-world-book-day-42770712.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-gear-80987761.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-settings-6915622.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devuska-volosy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-72732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-687987.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-727321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-687987 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-687987 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-670838.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-344601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-481903.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-144565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-632051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-463603.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-397144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-главная-страница-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Диаграмма без названия.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6bd7e0a15fdb2552141c337389caebc6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1842330a8e8e97b9148f9e745f617605.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-900-600-118821.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2515\build\Xamarin.Forms.targets')" />
+</Project>
